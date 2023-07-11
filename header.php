@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/jquery.mmenu.positioning.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/style.css">
 	<link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <?php wp_head()?>
 </head>
 <body>
 	<div class="lh-wrapper">

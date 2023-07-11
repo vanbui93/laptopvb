@@ -64,5 +64,6 @@
 <script src="<?php bloginfo('template_directory')?>/js/lightslider.js"></script>
 <script src="<?php bloginfo('template_directory')?>/js/lightGallery.js"></script>
 <script src="<?php bloginfo('template_directory')?>/js/main.js"></script>
+<?php wp_footer()?>
 </body>
 </html>
