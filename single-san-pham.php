@@ -17,8 +17,8 @@
                 <div class="block-product-slider">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-6  left">
-                            <?php $gallery = get_field('hinh_anh')?>
                             <ul id="imageGallery">
+                                <?php $gallery = get_field('hinh_anh')?>
                                 <?php foreach ($gallery as $key => $value) {?>
                                     <li data-thumb="<?php echo $value['sizes']['thumbnail'] ?>" data-src="<?php echo $value['url'] ?>">
                                         <div class="img-height">
