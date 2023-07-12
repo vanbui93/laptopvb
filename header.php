@@ -29,7 +29,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="box-logo col-lg-2 col-4">
-                                <a href="" class="logo"><img class="img-fluid" src="<?php bloginfo('template_directory')?>/img/phan-gia-huy.png" alt=""></a>
+                                <a href="<?php bloginfo( 'url' )?>" class="logo"><img class="img-fluid" src="<?php bloginfo('template_directory')?>/img/phan-gia-huy.png" alt=""></a>
                             </div>
                             <div class="box-menu col-lg-10">
                                 <nav id="drop_down">

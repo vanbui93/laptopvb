@@ -108,5 +108,10 @@
 <script src="<?php bloginfo('template_directory')?>/js/lightGallery.js"></script>
 <script src="<?php bloginfo('template_directory')?>/js/main.js"></script>
 <?php wp_footer()?>
+
+<!-- start code facebook comment -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="iiTb8OG5"></script>
+<!-- end code facebook comment -->
 </body>
 </html>

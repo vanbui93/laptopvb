@@ -5,7 +5,9 @@
         <div class="bread-crumb">
             <a href="<?php bloginfo( 'url' ); ?>">Trang chủ</a>
             <span class="dot">/</span>
-            <span class="name">Thuê xe du lịch</span>
+            <a href="<?php bloginfo( 'url' ); ?>/san-pham">Sản phẩm</a>
+            <span class="dot">/</span>
+            <span class="name"><?php single_cat_title(); ?></span>
         </div>
     </div>
     <div class="container">
@@ -16,8 +18,8 @@
                 <div class="item-product col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="bg">
                         <div class="img-height">
-                            <a class="img" href="<?php the_permalink(); ?>">
-                                <img class="img-fluid lh2-img" src="<?php echo $featured_img_url; ?>" alt="<?php the_title(); ?>">
+                            <a class="img" href="">
+                                <img class="img-fluid lh2-img" src="<?php echo $featured_img_url; ?>" alt="">
                             </a>
                         </div>
                         <div class="info-product">
@@ -34,7 +36,7 @@
                     </div>
                 </div>
             <?php endwhile; else : ?>
-            <p>Rất tiếc! Không có sản phẩm nào</p>
+            <p>Rất tiếc! Không có sản phẩm nào trong danh mục</p>
             <?php endif; ?>
             <!-- end item -->
             <?php if(paginate_links()!='') {?>
