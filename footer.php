@@ -1,3 +1,46 @@
+<div class="block-partner">
+    <div class="container">
+        <div class="responsive">
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/1.png" alt="">
+                </div>
+            </div>
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/2.png" alt="">
+                </div>
+            </div>
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/3.png" alt="">
+                </div>
+            </div>
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/4.png" alt="">
+                </div>
+            </div>
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/5.png" alt="">
+                </div>
+            </div>
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/6.png" alt="">
+                </div>
+            </div>
+            <div class="col-2 item-partner">
+                <div class="bg">
+                    <img class="img-fluid" src="<?php bloginfo( 'template_directory' ) ?>/img/1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="button-slider next"><i class="fas fa-chevron-right"></i></button>
+        <button class="button-slider prev"><i class="fas fa-chevron-left"></i></button>
+    </div>
+</div>
 <div class="footer-bg">
     <div class="block-footer">
         <div class="container">

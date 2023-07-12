@@ -460,7 +460,7 @@ background: rgba(11, 118, 206, 0.7)
 	background: #084f8a;
 	color: #fff;
 }
-.block-menu ul li:hover,.block-menu ul li.active {
+.block-menu ul li:hover,.block-menu ul li.current-menu-item {
     background: #0b76ce;
 }
 
