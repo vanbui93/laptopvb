@@ -107,72 +107,7 @@
                 </div>
                 <!-- end block-product-other -->
             </div>
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="box-cate">
-                    <p class="title-sidebar"><i class="fas fa-bars"></i>Dịch vụ thuê xe</p>
-                    <div class="box-border">
-                        <ul class="lh2-ul">
-                            <li><a href=""><i class="fas fa-caret-right"></i>Thuê xe du lịch</a></li>
-                            <li><a href=""><i class="fas fa-caret-right"></i>Thuê xe dự án</a></li>
-                            <li><a href=""><i class="fas fa-caret-right"></i>Thuê xe cưới hỏi</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box-contact">
-                    <p class="title-sidebar"><i class="fas fa-bars"></i>Hỗ trợ trực tuyến</p>
-                    <div class="box-border">
-                        <ul class="lh2-ul">
-                            <li>Hotline: 0915 17 12 19</li>
-                            <li>Email: inb.mycar@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box-hightlight-news">
-                    <p class="title-sidebar"><i class="fas fa-bars"></i>Tin nỗi bật</p>
-                    <div class="box-border">
-                        <div class="list-news">
-                            <a class="img" href=""><img class="img-fluid lh2-img" src="img/a1.jpg" alt=""></a>
-                            <div class="right-list">
-                                <a href="">Giới chức Thái Lan thông báo một người trong đội thợ lặn</a>
-                                <div class="lh2-date"><i class="fas fa-calendar-alt"></i> 20/08/1993</div>
-                            </div>
-                        </div>
-                        <!-- end item -->
-                        <div class="list-news">
-                            <a class="img" href=""><img class="img-fluid lh2-img" src="img/a2.jpg" alt=""></a>
-                            <div class="right-list">
-                                <a href="">Giới chức Thái Lan thông báo một người trong đội thợ lặn</a>
-                                <div class="lh2-date"><i class="fas fa-calendar-alt"></i> 20/08/1993</div>
-                            </div>
-                        </div>
-                        <!-- end item -->
-                        <div class="list-news">
-                            <a class="img" href=""><img class="img-fluid lh2-img" src="img/a3.jpg" alt=""></a>
-                            <div class="right-list">
-                                <a href="">Giới chức Thái Lan thông báo một người trong đội thợ lặn</a>
-                                <div class="lh2-date"><i class="fas fa-calendar-alt"></i> 20/08/1993</div>
-                            </div>
-                        </div>
-                        <!-- end item -->
-                        <div class="list-news">
-                            <a class="img" href=""><img class="img-fluid lh2-img" src="img/a4.jpg" alt=""></a>
-                            <div class="right-list">
-                                <a href="">Giới chức Thái Lan thông báo một người trong đội thợ lặn</a>
-                                <div class="lh2-date"><i class="fas fa-calendar-alt"></i> 20/08/1993</div>
-                            </div>
-                        </div>
-                        <!-- end item -->
-                        <div class="list-news">
-                            <a class="img" href=""><img class="img-fluid lh2-img" src="img/toyota.png" alt=""></a>
-                            <div class="right-list">
-                                <a href="">Giới chức Thái Lan thông báo một người trong đội thợ lặn</a>
-                                <div class="lh2-date"><i class="fas fa-calendar-alt"></i> 20/08/1993</div>
-                            </div>
-                        </div>
-                        <!-- end item -->
-                    </div>
-                </div>
-            </div>
+            <?php get_sidebar(); ?>
         </div>
 
     </div>
@@ -212,18 +147,7 @@
                 </div>
             </div>
             <p class="box-title">Thông tin khách hàng</p>
-            <input type="" name="" placeholder="Họ và tên *">
-            <div class="row">
-                <div class="col-6">
-                    <input type="" name="" placeholder="Email *">
-                </div>
-                <div class="col-6">
-                    <input type="" name="" placeholder="Điện thoại *">
-                </div>
-            </div>
-            <div class="text-right">
-                <button class="lh2-button" type="">Mua ngay</button>
-            </div>
+            <?php echo do_shortcode('[contact-form-7 id="135" title="Mua hàng"];') ?>
         </form>
     </div>
 </div>
