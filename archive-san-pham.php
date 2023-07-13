@@ -5,7 +5,7 @@
         <div class="bread-crumb">
             <a href="<?php bloginfo( 'url' ); ?>">Trang chủ</a>
             <span class="dot">/</span>
-            <span class="name">Thuê xe du lịch</span>
+            <span class="name">Tất cả sản phẩm</span>
         </div>
     </div>
     <div class="container">

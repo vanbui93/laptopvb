@@ -46,29 +46,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 item">
-                    <p class="title">GIỚI THIỆU</p>
-                    <p class="caption">ABC là công ty du lịch, với nhiều năm kinh nghiệm trong việc cung cấp dịch vụ về vận tải du lịch, tư vấn và lập kế hoạch đi...</p>
-                    <ul class="lh2-ul">
-                        <li><i class="fas fa-map-marker-alt"></i> 244 Điện Biên Phủ, Q. Thanh Khê, TP Đà Nẵng</li>
-                        <li><i class="fas fa-phone"></i> 0905 548 836</li>
-                        <li><i class="fas fa-envelope"></i> Email: inb.mycar@gmail.com</li>
-                    </ul>
+                    <?php dynamic_sidebar( 'sidebar-footer1' ); ?>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 item">
-                    <p class="title">Hỗ trợ khách hàng</p>
-                    <ul class="lh2-ul">
+                    <?php dynamic_sidebar( 'sidebar-footer2' ); ?>
+                    <!-- <ul class="lh2-ul">
                         <li><a href="">Liên hệ với chúng tôi</a></li>
                         <li><a href="">Câu hỏi thường gặp</a></li>
                         <li><a href="">Điều khoản và chính sách</a></li>
                         <li><a href="">Chăm sóc khách hàng</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 item">
                     <p class="title">DỊCH VỤ</p>
                     <ul class="lh2-ul">
-                        <li><a href="">Bán xe HONDA</a></li>
-                        <li><a href="">Bán xe TOYOTA</a></li>
-                        <li><a href="">Bán xe BMW</a></li>
+                        <?php $args = array( 
+                            'hide_empty' => 0,
+                            'taxonomy' => 'danh-muc',
+                            ); 
+                            $cates = get_categories( $args ); 
+                            foreach ( $cates as $cate ) {  ?>
+                                <li>
+                                    <a href="<?php echo get_term_link($cate->slug, 'danh-muc'); ?>"><?php echo $cate->name; ?></a>
+                                </li>
+                        <?php } ?>
                     </ul>
                 </div>
 

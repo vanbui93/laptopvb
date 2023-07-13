@@ -18,7 +18,7 @@
                 <div class="item-product col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="bg">
                         <div class="img-height">
-                            <a class="img" href="">
+                            <a class="img" href="<?php the_permalink(); ?>">
                                 <img class="img-fluid lh2-img" src="<?php echo $featured_img_url; ?>" alt="">
                             </a>
                         </div>

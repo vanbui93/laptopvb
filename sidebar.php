@@ -17,13 +17,7 @@
         </div>
     </div>
     <div class="box-contact">
-        <p class="title-sidebar"><i class="fas fa-bars"></i>Hỗ trợ trực tuyến</p>
-        <div class="box-border">
-            <ul class="lh2-ul">
-                <li>Hotline: 0915 17 12 19</li>
-                <li>Email: inb.mycar@gmail.com</li>
-            </ul>
-        </div>
+        <?php dynamic_sidebar( 'sidebar-right' ); ?>
     </div>
     <div class="box-hightlight-news">
         <p class="title-sidebar"><i class="fas fa-bars"></i>Tin nỗi bật</p>

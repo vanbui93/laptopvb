@@ -120,35 +120,33 @@
     <div class="popup-content">
         <button class="lh-close-2 exit"></button>
         <p class="title">Đặt xe</p>
-        <form action="">
-            <div class="info-car">
-                <p class="box-title">Thông tin xe</p>
-                <div class="row">
-                    <div class="col-4">
-                        <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" alt="">
-                    </div>
-                    <div class="col-8">
-                        <p> <b class="name"><?php the_title(); ?></b></p>
-                        <p class="price"><b>Giá:</b> 
-                            <?php if(get_field('gia_sp')) { ?> 
-                                <?php the_field('gia_sp'); ?>
-                            <?php } else {?> 
-                                Liên hệ
-                            <?php }?>
-                        </p>
-                        <p><b>Thương hiệu:</b> <?php the_field('thuong_hieu'); ?></p>
-                        <p><b>Màu sắc:</b> <?php the_field('mau_sac'); ?></p>
-                        <p><b>CPU:</b> <?php the_field('cpu'); ?></p>
-                        <p><b>RAM:</b> <?php the_field('ram'); ?></p>
-                        <p><b>Ổ cứng:</b> <?php the_field('o_cung'); ?></p>
-                        <p><b>Card đồ hoạ:</b> <?php the_field('card_do_hoa'); ?></p>
-                        <p><b>Màn hình:</b> <?php the_field('man_hinh'); ?></p>
-                    </div>
+        <div class="info-car">
+            <p class="box-title">Thông tin xe</p>
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" alt="">
+                </div>
+                <div class="col-8">
+                    <p> <b class="name"><?php the_title(); ?></b></p>
+                    <p class="price"><b>Giá:</b> 
+                        <?php if(get_field('gia_sp')) { ?> 
+                            <?php the_field('gia_sp'); ?>
+                        <?php } else {?> 
+                            Liên hệ
+                        <?php }?>
+                    </p>
+                    <p><b>Thương hiệu:</b> <?php the_field('thuong_hieu'); ?></p>
+                    <p><b>Màu sắc:</b> <?php the_field('mau_sac'); ?></p>
+                    <p><b>CPU:</b> <?php the_field('cpu'); ?></p>
+                    <p><b>RAM:</b> <?php the_field('ram'); ?></p>
+                    <p><b>Ổ cứng:</b> <?php the_field('o_cung'); ?></p>
+                    <p><b>Card đồ hoạ:</b> <?php the_field('card_do_hoa'); ?></p>
+                    <p><b>Màn hình:</b> <?php the_field('man_hinh'); ?></p>
                 </div>
             </div>
-            <p class="box-title">Thông tin khách hàng</p>
-            <?php echo do_shortcode('[contact-form-7 id="135" title="Mua hàng"];') ?>
-        </form>
+        </div>
+        <p class="box-title">Thông tin khách hàng</p>
+        <?php echo do_shortcode('[contact-form-7 id="135" title="Mua hàng"]') ?>
     </div>
 </div>
 <!-- end popup -->

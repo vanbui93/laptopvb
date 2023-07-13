@@ -10,7 +10,7 @@
                 <span class="dot">/</span>
                 <a href="<?php bloginfo( 'url' ) ?>/category/tin-tuc">Tin tức</a>
                 <span class="dot">/</span>
-                <span class="name">Dịch vụ thuê xe</span>
+                <span class="name"><?php the_title(); ?></span>
             </div>
         </div>
         <div class="container">
